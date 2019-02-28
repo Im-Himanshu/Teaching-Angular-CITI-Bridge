@@ -1,0 +1,21 @@
+
+<div *ngIf="!movie">Movie not found</div>
+<table *ngIf="movie">
+  <tr>
+    <td>Name</td>
+    <td>{{movie.name}}</td>
+  </tr>
+  <tr>
+    <td>Description</td>
+    <td>{{movie.description}}</td>
+  </tr>
+  <tr>
+    <td>Release Date</td>
+    <td>{{movie.releaseDate}}</td>
+  </tr>
+  <tr>
+    <td>Rating</td>
+    <td>{{movie.rating}}</td>
+  </tr>
+</table>
+<a routerLink="/movie-list">Go back</a>
